@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Save HTML Form as PDF</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.3/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
+</head>
+<body>
+  <form id="myForm">
+    <!-- Add your form elements here -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    
+    <button id="saveAsPdfBtn">Save as PDF</button>
+  </form>
+
+  <script>
+    // Function to generate PDF from form
+    function generatePDF() {
+      const form = document.getElementById('myForm');
+      
+      // Convert form to canvas
+      html2canvas(form).then((canvas) => {
+        const formData = new FormData(form);
+        const pdf = new jsPDF();
+        
+        // Set the document title
+        pdf.setTitle('Form Data');
+        
+        // Convert canvas to image data URL
+        const imgData = canvas.toDataURL('image/jpeg', 1.0);
+        
+        // Add the image to the PDF
+        pdf.addImage(imgData, 'JPEG', 0, 0);
+        
+        // Add form data to the PDF
+        let y = canvas.height + 20; // Position after the image
+        formData.forEach(function(value, key) {
+          pdf.text(10, y, key + ': ' + value);
+          y += 10; // Increase y position for the next field
+        });
+        
+        // Save the PDF
+        pdf.save('form_data.pdf');
+      });
+    }
+    
+    // Attach click event listener to the button
+    const saveAsPdfBtn = document.getElementById('saveAsPdfBtn');
+    saveAsPdfBtn.addEventListener('click', generatePDF);
+  </script>
+</body>
+</html>

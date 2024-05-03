@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Enquiry Form</legend>
+            Name: <input type="text" name="name" value="" placeholder="Enter your name here..." required autofocus maxlength="20"><br><br>
+            Address: <br><textarea name="address" cols="30" rows="10"></textarea><br><br>
+            Gender:
+            <input type="radio" name="gender" checked>Male
+            <input type="radio" name="gender">Female
+            <input type="radio" name="gender">Other <br><br>
+            Country:
+            <select>
+                <optgroup label="Asia">
+                    <option value="indai">India</option>
+                    <option value="pak">Pakistan</option>
+                </optgroup>
+                <optgroup label="out of asia">
+                    <option value="usa">USA</option>
+                </optgroup>
+            </select><br><br>
+            Hobbies:
+            <input type="checkbox" name="hobbies[]">Dancing
+            <input type="checkbox" name="hobbies[]" checked>Singing
+            <input type="checkbox" name="hobbies[]">Painting <br><br>
+            Image:
+            <input type="file" name="image"><br><br>
+            Choose a color:
+            <input type="color" name="color" value="#FF0000"><br><br>
+            Enter email:
+            <input type="email" name="email"><br><br>
+            Note:
+            <input type="text" name="note" value="Please fill this form carefully" readonly disabled><br><br>
+            Enter Password:
+            <input type="password" name="password"><br><br>
+            Enter Age:
+            <input type="number" name="age" min="1" max="25"><br><br>
+            Secret:
+            <input type="hidden" name="Secret"> hello<br><br>
+            Date:
+            <input type="date" name="date"><br><br>
+            Date time:
+            <input type="datetime-local" name="datetime"><br><br>
+            Time:
+            <input type="time" name="time"><br><br>
+            Month:
+            <input type="month" name="month"><br><br>
+            Week:
+            <input type="week" name="week"><br><br>
+            Range:
+            <input type="range" name="range" value="30" min="20" max="50">
+            <br><br><input type="submit" value="Send">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+</body>
+
+</html>

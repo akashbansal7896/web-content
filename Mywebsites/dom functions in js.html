@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM functions in javaScript</title>
+</head>
+
+<body>
+    <div class="main">
+        Hello Everyone
+    </div>
+    <div class="main">
+        Kaise ho?
+    </div>
+</body>
+<script>
+    // document.getElementById("main").innerHTML="<h1> Hello Everyone </h1>";
+    document.getElementsByClassName("main")[0].innerHTML = "Kaise ho?";
+    document.getElementsByClassName("main")[1].innerHTML = "Hello Everyone";
+</script>
+
+</html>

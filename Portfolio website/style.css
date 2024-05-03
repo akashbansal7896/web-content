@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.Portfolio-container{
+    min-height: 100vh;
+    width: 100%;
+}
+.navlist{
+    display: flex;
+    gap: 3.5rem;
+    height: 15vh;
+    background-color: #262625;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.navlist li{
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+.navlist li a{
+    text-decoration: none;
+    color: #fff;
+}
+.navlist li :hover{
+    color: #5db9ee;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+.left{
+    background-color: #262625;
+    width: 70%;
+    height: 85vh;
+    float: left;
+    padding-left: 3rem;
+    display: flex;
+    align-items: center;
+}
+.right{
+    background-color: #3877ff;
+    width: 30%;
+    height: 85vh;
+    float: left;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    font-size: 1.7rem;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.content{
+    margin-left: 4rem;
+}
+.content h2{
+    font-size: 1.5rem;
+    color: #fff;
+}
+.content h2 span{
+    color: #5db9ee;
+}
+.content h1{
+    font-size: 4rem;
+    color: #5db9ee;
+}
+.content .detail{
+    font-size: 1.1rem;
+    color: #fff;
+    max-width: 38rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.8rem;
+}
+.icons :hover{
+    color: #5db9ee;
+    cursor: pointer;
+    font-size: 2rem;
+}
+.btn1,.btn2{
+    font-size: 1.7rem;
+    padding: 1rem;
+    background-color: transparent;
+    color: #5db9ee;
+    border: 0.2rem solid #5db9ee;
+    border-radius: 1rem;
+}
+.btn1{
+    margin-right: 2rem;
+}
+.btn1:hover{
+    color: #fff;
+    background-color: #5db9ee;
+    transition: 0.5s;
+}
+.btn2:hover{
+    color: #fff;
+    background-color: #5db9ee;
+    transition: 0.5s;
+}

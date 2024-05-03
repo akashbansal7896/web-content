@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>use of div tag with internal css</title>
+    <style>
+        .main{
+            width: 500px;
+            height: 500px;
+            text-align: center;
+        }
+        #row1{
+            width: 500px;
+            height: 250px;
+        }
+        #row2{
+            width: 500px;
+            height: 250px;
+        }
+        .col1{
+            width: 250px;
+            height: 250px;
+            background-color: blue;
+            float: left;
+        }
+        .col2{
+            width: 250px;
+            height: 250px;
+            background-color: pink;
+            float: left;
+        }
+        .col3{
+            width: 250px;
+            height: 250px;
+            background-color: green;
+            float: left;
+        }
+        .col4{
+            width: 250px;
+            height: 250px;
+            background-color: red;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div id="row1">
+            <div class="col1">Home</div>
+            <div class="col2">About</div>
+        </div>
+        <hr>
+        <div id="row2">
+            <div class="col3">Gallery</div>
+            <div class="col4">Contact</div>
+        </div>
+    </div>
+</body>
+</html>

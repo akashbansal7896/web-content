@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.N College</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;500;800;900&family=Poppins:wght@200;400;600;900&display=swap" rel="stylesheet">
+        
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'League Spartan', sans-serif;
+
+    background-color: #ccc;
+    border: 1px;
+    border-color: black;
+    border-radius: 2px;
+}
+
+.containerr{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.apply_box{
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);
+    border-radius: 10px;
+}
+.title_small{
+    font-size: 20px;
+}
+
+.form_container{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.form_control{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+input,select,textarea{
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+input:focus{
+   outline-color: red;
+}
+
+.button_container{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+button{
+    background-color: rgb(0, 255, 55);
+    border: transparent solid 2px;
+    padding: 5px 10px;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 15px;
+    transition: 0.3s ease-in;
+}
+
+button:hover{
+    background-color: #ccc;
+    border: 2px solid;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+.textarea_control{
+    grid-column: 1/span 2;
+}
+.textarea_control textarea {
+    width: 100%;
+} */
+
+ @media (max-width: 460px){
+    .textarea_control{
+    grid-column: 1  /span 2;
+    }
+};
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="apply_box">
+            <h1>S.N College of Science Dholpur
+                <span class="title_small">(RAJ.)</span>
+            </h1>
+            <form action="">
+                <div class="form_container">
+                    <div class="form_control">
+                        <label for="first_name">
+                            Student Name
+                        </label>
+                        <input id="stu_name" name="stu_name" placeholder="Name">
+                    </div>
+                    <div class="form_control">
+                        <label for="stu_fatherName">
+                            Father's Name
+                        </label>
+                        <input id="stu_fatherName" name="stu_fatherName" placeholder="Enter Father's name">
+                </div>
+                <!-- <div class="form_control">
+                    <label for="class">
+                        Class:
+                    </label>
+                    <input id="stu_class" name="stu_class" placeholder="Enter Class">
+            </div> -->
+                <div class="form_control">
+                    <label for="email"> Email</label>
+                <input 
+                type="email"
+                id="email"
+                name="name"
+                placeholder="Enter Email..."
+                />
+            </div>
+            <div class="form_control">
+                <label for="class"> Class:</label>
+            <select id="class" name="class">
+                <option value="">Select Class</option>
+                <option value="Frontend">B.A</option>
+                <option value="Backend">BCA</option>
+                <option value="full_stack">Bsc</option>
+                <option value="ui_ux">B.ed</option>
+            <
+        </select>
+
+        </div>
+        <div class="form_control">
+            <label for="address">Address</label>
+            <textarea 
+            id="address"
+            name="address"
+            rows="4"
+            cols="50"
+            placeholder="Enter Full Address"
+            ></textarea>
+        </div>
+        <div class="form_control">
+            <label for="city">City</label>
+            <input id="city" name="city" placeholder="Type your city Name">
+        </div>
+        <div class="form_control">
+            <label for="pincode">Pincode</label>
+            <input type="number" id="pincode" name="pincode" placeholder="Pincode">
+        </div>
+
+        <div class="form_control">
+            <label for="Admission Fee:">Admission Fee:</label>
+            <input type="number" id="Fee" name="pincode" placeholder="Admission Fee">
+        </div>
+
+        <div class="form_control">
+            <label for="pincode">University Exam Fee:</label>
+            <input type="number" id="pincode" name="pincode" placeholder="">
+        </div>
+
+        <div class="form_control">
+            <label for="Admission form Fee:">Admission form Fee:</label>
+            <input id="Admission form Fee:" name="city" placeholder="">
+        </div>
+
+        <div class="form_control">
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" >
+        </div>
+
+        
+        <div class="form_control">
+            <label for="upload">Upload Your Document</label>
+            <input type="file" name="upload" id="upload">
+        </div>
+
+        <!-- <div class="form_control">
+            <label for="TOTAl"><h2>TOTAl</h2></label>
+            <input type="text" id="date" name="TOTAl" >
+        </div> -->
+        
+        <div class="button_container">
+            <button type="submit">Apply Now</button>
+        </div>
+            </form>
+
+        </div>
+    </div>
+
+    <script>
+//         function openForm() {
+//   document.getElementById("myForm").style.display = "block";
+// }
+
+// function closeForm() {
+//   document.getElementById("myForm").style.display = "none";
+// }
+    </script>
+</body>
+
+</html>

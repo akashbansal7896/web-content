@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index Example</title>
+    <style>
+        .layer1 {
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .layer2 {
+            background-color: green;
+            width: 200px;
+            height: 200px;
+            top: 50px;
+            left: 50px;
+            position: absolute;
+            z-index: 2;
+        }
+
+        .layer3 {
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+            top: 100px;
+            left: 100px;
+            position: absolute;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+        <div class="layer1">layer 1</div>
+        <div class="layer2">layer 2</div>
+        <div class="layer3">layer 3</div>
+</body>
+</html>
